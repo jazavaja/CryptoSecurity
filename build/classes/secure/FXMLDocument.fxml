@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="534.0" prefWidth="664.0" style="-fx-background-color: #038cfc;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="secure.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <TextField fx:id="plain" layoutX="8.0" layoutY="63.0" prefHeight="58.0" prefWidth="539.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </TextField>
+      <Label layoutX="14.0" layoutY="42.0" prefHeight="17.0" prefWidth="238.0" text="Enter Plain or Encrypted text here" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="password" layoutX="10.0" layoutY="162.0" prefHeight="38.0" prefWidth="539.0" />
+      <Label layoutX="10.0" layoutY="141.0" prefHeight="17.0" prefWidth="217.0" text="Enter Password" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="216.0" prefHeight="17.0" prefWidth="191.0" text="Result" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="result" layoutX="10.0" layoutY="240.0" prefHeight="243.0" prefWidth="643.0" />
+      <Button layoutX="594.0" layoutY="489.0" mnemonicParsing="false" onAction="#copyResult" prefHeight="25.0" prefWidth="56.0" text="copy">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button layoutX="556.0" layoutY="170.0" mnemonicParsing="false" onAction="#clearPass" prefHeight="25.0" prefWidth="69.0" text="clear">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button layoutX="556.0" layoutY="94.0" mnemonicParsing="false" onAction="#clearPlain" prefHeight="25.0" prefWidth="69.0" text="clear">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button layoutX="556.0" layoutY="63.0" mnemonicParsing="false" onAction="#pastePlain" prefHeight="25.0" prefWidth="69.0" text="paste">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button layoutX="210.0" layoutY="3.0" mnemonicParsing="false" onAction="#encrypt" prefHeight="32.0" prefWidth="102.0" text="Encrypt" />
+      <Button layoutX="326.0" layoutY="2.0" mnemonicParsing="false" onAction="#decrypt" prefHeight="32.0" prefWidth="102.0" text="Decrypt" />
+    </children>
+</AnchorPane>

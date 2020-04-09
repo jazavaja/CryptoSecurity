@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Secure.jnlp">
+  <information>
+    <title>Secure</title>
+    <vendor>javad</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Secure.jar" size="5533" download="eager" />
+    <jar href="lib/commons-codec-1.14-javadoc.jar" size="523406" download="eager" />
+    <jar href="lib/commons-codec-1.14-sources.jar" size="355956" download="eager" />
+    <jar href="lib/commons-codec-1.14-test-sources.jar" size="217401" download="eager" />
+    <jar href="lib/commons-codec-1.14-tests.jar" size="316423" download="eager" />
+    <jar href="lib/commons-codec-1.14.jar" size="347669" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Secure" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="secure.Secure"  name="Secure" />
+  <update check="always"/>
+</jnlp>
